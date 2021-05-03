@@ -1,0 +1,44 @@
+.article {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.article__box {
+    margin: 10px 0px;
+    width: 200px;
+    border: solid 1px rgba(0, 0, 0, 0);
+}
+
+.article__name {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+.article__number {
+    background: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.article__box:hover {
+    border: 1px solid rgb(245, 223, 77);
+    color: rgb(245, 223, 77);
+}
+
+.article__number:hover {
+    color: rgb(245, 223, 77);
+} 
+
+
+@media all and (max-width: 680px) {
+    .article {
+        display: block;
+    }
+
+    .article__box {
+        margin: 20px auto;     
+    }
+}
